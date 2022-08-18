@@ -3,12 +3,20 @@ import NavBar from "../components/NavBar";
 import Form from "../components/Form";
 
 export const Home = () => {
-  return (
-    <div>
-      <NavBar />
-      Home
-    </div>
-  );
+    return (
+        <div>
+            <NavBar />
+            <div>
+                Home
+            </div>
+
+            <div>
+                <Form />
+            </div>
+
+
+        </div>
+    );
 };
 
 export default Home;

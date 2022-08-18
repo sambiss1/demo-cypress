@@ -18,14 +18,17 @@ export const NavButtonLink = styled.button`
 export const NavBar = () => {
   return (
     <div className="navbar">
-      <NavButtonLink data-test-id="link--home" className="link--home">
+      <NavButtonLink className="link--home">
         <Link to="/">Home</Link>
       </NavButtonLink>
-      <NavButtonLink data-test-id="link--about" className="link--about">
+      <NavButtonLink className="link--about">
         <Link to="/about">About</Link>
       </NavButtonLink>
-      <NavButtonLink data-test-id="link--services">
+      <NavButtonLink className="link--services">
         <Link to="/services">Services</Link>
+      </NavButtonLink>
+      <NavButtonLink className="link--contact">
+        <Link to="/contact">Contact</Link>
       </NavButtonLink>
     </div>
   );
