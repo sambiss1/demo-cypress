@@ -7,7 +7,7 @@ describe("Submit message", () => {
 
         cy.get("#name").type('John Doe');
         cy.get('#name').then(($input) => {
-            expect($input[0].validationMessage).to.eq('')
+            expect($input[0].validationMessage).to.eq('');
         })
 
         cy.get("#email").type('johndoe@gmail.com');
@@ -22,7 +22,5 @@ describe("Submit message", () => {
 
         cy.get('[type="submit"]').click()
         cy.get('.success').should('be.visible')
-
-
     });
 });

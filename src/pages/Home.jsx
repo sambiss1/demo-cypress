@@ -10,10 +10,6 @@ export const Home = () => {
                 Home
             </div>
 
-            <div>
-                <Form />
-            </div>
-
 
         </div>
     );
